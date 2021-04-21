@@ -54,8 +54,13 @@ video {
     z-index: 5;
     display: flex;
     justify-content: space-between;
+    opacity: 0;
+    transition: all 0.5s ease-out 2s;
+}
+
+.show-controls:hover .controls-container {
     opacity: 1;
-    transition: all 0.5s ease-in-out 2s;
+    transition: all 0.2s ease-out;
 }
 
 .progress-range {
@@ -78,7 +83,7 @@ video {
 
 .progress-bar {
     background: var(--primary-color);
-    width: 50%;
+    width: 0;
     height: 100%;
     border-radius: 10px;
     transition: all 0.5s ease;
